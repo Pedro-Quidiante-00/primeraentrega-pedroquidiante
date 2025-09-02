@@ -1,11 +1,13 @@
 body{
     margin: 0;
 }
+
+/*HEADER*/
 header{
     display: flex;
     max-width: 100%;
     height: 100px;
-    background-color: #873138;
+    background: linear-gradient(to right, #f6eaab, #bee3af);
     padding: 20px;
 }
 .container-pri {
@@ -15,8 +17,7 @@ header{
     width: 100%;
 }
 .logo img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 150px;
     object-fit: contain;
 }
 .menu{
@@ -34,19 +35,34 @@ header{
     display: inline;
     list-style: none;
     margin: 10px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
 }
 .menu li a {
     text-decoration: none;
     padding: 10px;
     color: white;
     font-size: 20px;
-    background-color: #592024;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10%;
 }
 @media (max-width: 768px) {
     .menu {
         display: none;
     }
+}
+
+/*BODY*/
+
+.container-sec{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+.men-ini{
+    align-items: center;
+    justify-content: center;
+}
+.men-ini a{
+    text-decoration: none;
+    background-color: #873138;
 }
