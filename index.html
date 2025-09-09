@@ -1,37 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Liceo de cultura</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="public/assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="container-pri">
-        <div class="logo">
-            <img src="assets/img/logo-01.png." alt="">
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
+    <!--HEADER-->
+    <header class="flex justify-between items-center h-[100px] bg-red-900 px-5 border-white">
+        <img src="public/assets/img/logo-4.png" alt="Logo" class="w-[200px] max-h-[90px] object-contain ">
+        <nav>
+            <ul class="flex h-full">
+                <li><a href="#" class="flex items-center px-4 h-full text-white text-xl border-r border-l border-white">Inicio</a></li>
+                <li><a href="#" class="flex items-center px-4 h-full text-white text-xl border-r border-white">Sobre Nosotros</a></li>
+                <li><a href="#" class="flex items-center px-4 h-full text-white text-xl border-r border-white">Servicios</a></li>
+                <li><a href="#" class="flex items-center px-4 h-full text-white text-xl border-r border-white">Contacto</a></li>
             </ul>
-        </div>
-    </div>
-</header>
-    <section class="container-sec">
-        <div class="mens-ini">
-            <h1 class="tit-00">Liceo de Cultura</h1>
-            <p>En el Liceo de Cultura brindamos educación integral de excelencia, combinando conocimiento académico con desarrollo cultural y valores humanos para formar líderes del mañana.</p>
-            <a href="index.html">conoce sobre nosotros</a>
+        </nav>
+    </header>
+    <!-- BODY PARTE 1 -->
+    <section class ="flex flex-row items-center justify-center h-[600px] bg-cover bg-center bg-no-repeat" style="background-image: url('public/assets/img/gb-img-00.png');">
+        <div class="flex flex-col items-center max-w-[600px] gap-3 overflow-hidden">
+            <h1 class="flex flex-col text-[40px] my-5 mx-0 mb-[15px] text-center text-white drop-shadow-2xl">
+                LICEO DE CULTURA
+            </h1>
+            <p class="text-justify text-white text-xl">
+                El arte esta en todas partes!!
+            </p>
+            <a href="#" class="no-underline text-2xl text-white bg-red-800 border-[10px] border-red-800 rounded-[10px] m-[15px] px-4 py-2 hover:bg-red-950 hover:border-red-950 transition-colors">
+                Conocer Más
+            </a>
         </div>
     </section>
-    <br>
-    <section>
+    <!-- BODY PARTE 2 -->
+    <section class="flex items-center justify-center py-16 px-8">
+        <div class="flex max-w-6xl w-full gap-8">
+            <div class="flex-1 flex flex-col justify-center">
+                <h1 class="text-[40px] my-5 mx-0 mb-[15px] text-center text-black drop-shadow-2xl">
+                    Sobre nosotros
+                </h1>
+                <p class="text-justify text-black leading-relaxed text-lg">
+                    El Liceo de Cultura es una institución educativa comprometida con la formación integral de sus estudiantes. Con más de 25 años de experiencia, nos dedicamos a brindar una educación de calidad que combine la excelencia académica con el desarrollo de valores humanos.
+                    <br><br>
+                    Nuestra metodología innovadora y nuestro equipo de profesionales altamente calificados nos permiten ofrecer una experiencia educativa única, preparando a nuestros estudiantes para los desafíos del siglo XXI.
+                </p>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <div class="w-full h-96 rounded-lg border-5 border-b-red-950 flex items-center justify-center">
+                    <img src="public/assets/img/img-banda.png" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BODY PARTE 3 -->
+    <section class = "flex items-center justify-center py-16 px-8">
         <div>
-
+            <h1 class="text-[40px] my-5 mx-0 mb-[15px] text-center text-black drop-shadow-2xl">¿Qué se practica?</h1>
         </div>
+
     </section>
+    <footer class="flex flex-col items-center justify-center w-full px-8 bg-red-900 text-white py-8">
+        <div class="text-start">
+            <p class="text-sm text-white">&copy; 2025 Liceo de cultura. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
