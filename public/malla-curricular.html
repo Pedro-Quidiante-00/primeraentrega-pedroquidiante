@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Liceo de cultura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-2.css">
+    <link rel="icon" type="image/png" href="/assets/img/logo-4.png">
+</head>
+<body class="bg-gray-50">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 island-header glass-effect shadow-lg">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center h-20 px-4 sm:px-6 lg:px-8">
+            <div class="logo-container flex-shrink-0">
+                <a href="index.html" class="block">
+                    <div class="h-16 flex items-center justify-start px-4 py-2">
+                        <img src="assets/img/logo-4.png"
+                             alt="Liceo de Cultura Logo"
+                             class="max-h-14 w-auto object-contain">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="hidden md:flex">
+                <ul class="flex items-center space-x-1">
+                    <li>
+                        <a href="index.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            Inicio
+                        </a>
+                    </li>
+                    <!-- MENU --->
+                    <li class="dropdown relative">
+                        <a href="#"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Nuestro Liceo
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-menu absolute top-full left-0 w-64 bg-white rounded-xl shadow-lg py-2 mt-2 border border-gray-200">
+                            <a href="/public/historia.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Historia de Nuestro Liceo
+                            </a>
+                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Documentación
+                            </a>
+                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                </svg>
+                                Malla Curricular
+                            </a>
+                            <a href="/public/cra.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                CRA
+                            </a>
+                            <a href="/public/infraestructura.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                                Infraestructura
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="index.html#especialidades"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                            Especialidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/inscripciones.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                            Inscripciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/contacto.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.83 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button"
+                    class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 p-1 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                    aria-label="Abrir menú">
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden hidden mobile-menu glass-effect border-t border-red-700">
+            <ul class="py-4 space-y-2">
+                <li>
+                    <a href="index.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <button class="mobile-submenu-trigger w-full flex items-center justify-between px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl" data-target="nuestro-liceo">
+                        <span class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Nuestro Liceo
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-200 svg-no-fill mobile-arrow" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div id="submenu-nuestro-liceo" class="mobile-submenu mx-8">
+                        <a href="/public/historia.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Historia
+                        </a>
+                        <a href="/public/documentación.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Documentación
+                        </a>
+                        <a href="/public/malla-curricular.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                            Malla Curricular
+                        </a>
+                        <a href="/public/cra.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                            CRA
+                        </a>
+                        <a href="/public/infraestructura.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Infraestructura
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="index.html#especialidades"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Especialidades
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inscripciones.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                        Inscripciones
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.83 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white pt-32 pb-16">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Malla Curricular
+            </h1>
+            <p class="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto leading-relaxed">
+                Descubre nuestro plan de estudios integral que combina formación académica de excelencia con especialización artística
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white border-b border-gray-200 py-4">
+    <div class="max-w-6xl mx-auto px-6">
+        <nav class="flex items-center space-x-2 text-sm text-gray-600">
+            <a href="index.html" class="hover:text-red-700 transition-colors">Inicio</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+            <span class="text-gray-900 font-medium">Malla Curricular</span>
+        </nav>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Formación Integral y Especializada
+            </h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Nuestro liceo artístico ofrece una educación que combina el currículum nacional con una profunda formación en las artes.
+                Los estudiantes desarrollan tanto competencias académicas como habilidades artísticas especializadas, preparándolos para
+                la educación superior y el mundo laboral.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-red-50 p-6 rounded-xl border border-red-100">
+                <div class="w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Formación General</h3>
+                <p class="text-gray-600">Cumplimiento completo del currículum nacional con énfasis en preparación para la educación superior y desarrollo de competencias fundamentales.</p>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Especialización Artística</h3>
+                <p class="text-gray-600">Formación profunda en artes visuales, música, danza o medios audiovisuales según la especialidad elegida.</p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl border border-green-100">
+                <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Desarrollo Integral</h3>
+                <p class="text-gray-600">Talleres complementarios, proyectos interdisciplinarios y formación en valores para un desarrollo completo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Plan de Estudios por Nivel
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Nuestro plan de estudios se estructura progresivamente, combinando asignaturas del plan común
+                con materias de especialización artística en cada nivel.
+            </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200">
+            <button class="level-tab px-6 py-3 font-medium text-gray-600 border-b-2 border-transparent hover:text-red-600 hover:border-red-200 transition-all duration-300 active" data-level="primero">
+                1° Medio
+            </button>
+            <button class="level-tab px-6 py-3 font-medium text-gray-600 border-b-2 border-transparent hover:text-red-600 hover:border-red-200 transition-all duration-300" data-level="segundo">
+                2° Medio
+            </button>
+            <button class="level-tab px-6 py-3 font-medium text-gray-600 border-b-2 border-transparent hover:text-red-600 hover:border-red-200 transition-all duration-300" data-level="tercero">
+                3° Medio
+            </button>
+            <button class="level-tab px-6 py-3 font-medium text-gray-600 border-b-2 border-transparent hover:text-red-600 hover:border-red-200 transition-all duration-300" data-level="cuarto">
+                4° Medio
+            </button>
+        </div>
+
+        <div class="level-content" id="primero">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-red-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        Formación General
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Lengua y Literatura</span>
+                            <span class="text-sm text-gray-500">4 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Matemática</span>
+                            <span class="text-sm text-gray-500">4 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Historia y Geografía</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Ciencias Naturales</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Inglés</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Educación Física</span>
+                            <span class="text-sm text-gray-500">2 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Religión/Ética</span>
+                            <span class="text-sm text-gray-500">2 hrs/sem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-blue-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Formación Artística
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Taller de Especialidad</span>
+                            <span class="text-sm text-gray-500">6 h/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Historia del Arte</span>
+                            <span class="text-sm text-gray-500">2 h/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Apreciación Estética</span>
+                            <span class="text-sm text-gray-500">2 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Taller Complementario</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                        <h4 class="font-bold text-green-800 mb-2">Especialidades Disponibles:</h4>
+                        <ul class="text-green-700 space-y-1">
+                            <li>• Artes Visuales</li>
+                            <li>• Música</li>
+                            <li>• Danza</li>
+                            <li>• Medios Audiovisuales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="level-content hidden" id="segundo">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-red-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        Formación General
+                    </h3>
+                    <p class="text-gray-600 mb-4">En segundo medio se profundiza en las competencias básicas y se introduce la preparación para las evaluaciones nacionales.</p>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Lengua y Literatura</span>
+                            <span class="text-sm text-gray-500">4 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Matemática</span>
+                            <span class="text-sm text-gray-500">4 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Historia y Geografía</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Biología</span>
+                            <span class="text-sm text-gray-500">3 h/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Inglés</span>
+                            <span class="text-sm text-gray-500">3 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Educación Física</span>
+                            <span class="text-sm text-gray-500">2 hrs/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Orientación</span>
+                            <span class="text-sm text-gray-500">1 hr/sem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-blue-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Formación Artística Avanzada
+                    </h3>
+                    <p class="text-gray-600 mb-4">Profundización en la especialidad elegida con mayor énfasis en técnicas avanzadas y proyectos creativos.</p>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Taller de Especialidad</span>
+                            <span class="text-sm text-gray-500">8 h/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Teoría del Arte</span>
+                            <span class="text-sm text-gray-500">2 h/sem</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                            <span class="font-medium text-gray-700">Proyecto Creativo</span>
+                            <span class="text-sm text-gray-500">3 h/sem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="level-content hidden" id="tercero">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">3° Medio - Formación Diferenciada</h3>
+                <p class="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+                    En tercero medio, los estudiantes eligen su especialización definitiva y comienzan a prepararse intensivamente
+                    para la educación superior, tanto en el ámbito académico como artístico.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Plan Común</h4>
+                        <p class="text-sm text-gray-600">Asignaturas obligatorias según normativa nacional</p>
+                        <div class="text-xs text-gray-500 mt-2">18 hrs/semana</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Formación Diferenciada</h4>
+                        <p class="text-sm text-gray-600">Especialización artística intensiva y electivos</p>
+                        <div class="text-xs text-gray-500 mt-2">14 hrs/semana</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Preparación PSU/PDT</h4>
+                        <p class="text-sm text-gray-600">Talleres de preparación para educación superior</p>
+                        <div class="text-xs text-gray-500 mt-2">6 hrs/semana</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="level-content hidden" id="cuarto">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">4° Medio - Culminación y Proyección</h3>
+                <p class="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+                    El último año se enfoca en la consolidación de competencias, la preparación intensiva para la educación superior
+                    y el desarrollo del proyecto de titulación artística.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <h4 class="font-bold text-gray-900 mb-2">Núcleo de Formación General</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Lengua y Literatura (3 hrs)</li>
+                                <li>• Matemática (3 h)</li>
+                                <li>• Historia (3 h)</li>
+                                <li>• Ciencias (3 h)</li>
+                                <li>• Inglés (2 h)</li>
+                                <li>• Educación Física (2 hrs)</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-bold text-gray-900 mb-2">Proyecto de Titulación</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Desarrollo de proyecto final (8 h)</li>
+                                <li>• Seminario de investigación (2 h)</li>
+                                <li>• Tutoría personalizada (2 h)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-bold text-gray-900 mb-2">Electivos de Profundización</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Electivo científico-humanista (3 h)</li>
+                                <li>• Electivo artístico avanzado (4 hrs)</li>
+                                <li>• Preparación PSU/PDT (4 h)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                            <h5 class="font-bold text-yellow-800 mb-2">Actividades Especiales</h5>
+                            <ul class="text-yellow-700 text-sm space-y-1">
+                                <li>• Muestra de Egreso</li>
+                                <li>• Prácticas Profesionales</li>
+                                <li>• Feria Universitaria</li>
+                                <li>• Ceremonia de Graduación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Especialidades Artísticas
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Cada especialidad cuenta con un programa específico diseñado para desarrollar competencias
+                técnicas y creativas de nivel profesional.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4 4 4 0 004-4V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Artes Visuales</h3>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Formación integral en técnicas tradicionales y contemporáneas de las artes visuales,
+                    desde dibujo y pintura hasta instalaciones y arte digital.
+                </p>
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-800">Áreas de estudio:</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Dibujo técnico y artístico</li>
+                        <li>• Pintura (óleo, acrílico, acuarela)</li>
+                        <li>• Escultura y modelado</li>
+                        <li>• Grabado y serigrafía</li>
+                        <li>• Arte digital y multimedia</li>
+                        <li>• Historia del arte y crítica</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl border border-blue-200">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Música</h3>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Desarrollo integral de competencias musicales que abarca interpretación, composición,
+                    teoría musical y tecnología aplicada a la música.
+                </p>
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-800">Áreas de estudio:</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Instrumento principal y canto</li>
+                        <li>• Teoría musical y armonía</li>
+                        <li>• Composición y arreglos</li>
+                        <li>• Ensambles y música de cámara</li>
+                        <li>• Producción musical digital</li>
+                        <li>• Historia de la música</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-xl border border-pink-200">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-pink-600 text-white rounded-lg flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Danza</h3>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Formación completa en técnicas de danza clásica y contemporánea, incluyendo
+                    coreografía, expresión corporal y performance.
+                </p>
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-800">Áreas de estudio:</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Ballet clásico y técnica</li>
+                        <li>• Danza contemporánea</li>
+                        <li>• Folclore y danzas tradicionales</li>
+                        <li>• Coreografía y creación</li>
+                        <li>• Expresión corporal</li>
+                        <li>• Historia de la danza</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl border border-green-200">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Medios Audiovisuales</h3>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Especialización en creación de contenidos audiovisuales, desde la preproducción
+                    hasta la postproducción, incluyendo nuevas tecnologías digitales.
+                </p>
+                <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-800">Áreas de estudio:</h4>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Producción cinematográfica</li>
+                        <li>• Fotografía digital y análoga</li>
+                        <li>• Edición y postproducción</li>
+                        <li>• Guión y narrativa audiovisual</li>
+                        <li>• Animación digital</li>
+                        <li>• Medios interactivos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Metodología y Evaluación
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Nuestro enfoque pedagógico integra métodos tradicionales con innovación educativa,
+                centrado en el desarrollo integral del estudiante.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-blue-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                    </svg>
+                    Metodología Activa
+                </h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Aprendizaje basado en proyectos</li>
+                    <li>• Trabajo colaborativo</li>
+                    <li>• Talleres prácticos intensivos</li>
+                    <li>• Metodología STEAM</li>
+                    <li>• Aula invertida</li>
+                    <li>• Evaluación formativa continua</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-green-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Sistema de Evaluación
+                </h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Evaluación por competencias</li>
+                    <li>• Portafolios digitales</li>
+                    <li>• Presentaciones públicas</li>
+                    <li>• Autoevaluación y coevaluación</li>
+                    <li>• Rúbricas específicas por área</li>
+                    <li>• Proyecto final de especialidad</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-purple-600 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                    </svg>
+                    Recursos y Tecnología
+                </h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Aulas especializadas equipadas</li>
+                    <li>• Laboratorios digitales</li>
+                    <li>• Biblioteca especializada</li>
+                    <li>• Plataforma virtual de aprendizaje</li>
+                    <li>• Software profesional</li>
+                    <li>• Equipamiento de última generación</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            ¿Listo para formar parte de nuestra comunidad educativa?
+        </h2>
+        <p class="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+            Descubre cómo nuestra malla curricular puede potenciar tu talento artístico
+            mientras te preparas para un futuro exitoso.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="inscripciones.html"
+               class="bg-white text-red-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Iniciar Inscripción
+            </a>
+            <a href="contacto.html"
+               class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-red-900 transition-all duration-300">
+                Solicitar Información
+            </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <footer class="w-full px-8 bg-red-900 text-white py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Liceo de Cultura</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Formando estudiantes integrales a través de una educación artística de excelencia,
+                        fomentando la creatividad y los valores humanos desde hace más de 25 años.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mt-1 mr-3 flex-shrink-0 fill-white" viewBox="0 0 24 24">
+                                <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z"/>
+                            </svg>
+                            <div>
+                                <p class="text-gray-300 text-sm leading-relaxed">
+                                    Av. Principal #123<br>
+                                    Centro, Ciudad<br>
+                                    Código Postal 12345
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 fill-white" viewBox="0 0 24 24">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <a href="tel:+56912345678" class="text-gray-300 hover:text-white transition-colors">
+                                +56 9 1234 5678
+                            </a>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 fill-white" viewBox="0 0 24 24">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <a href="mailto:contacto@liceodecultura.cl" class="text-gray-300 hover:text-white transition-colors">
+                                contacto@liceodecultura.cl
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform fill-white" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform fill-white" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8zm7.119 0c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform fill-white" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="mt-6">
+                        <h5 class="text-sm font-semibold mb-2 text-red-300">Horario de Atención</h5>
+                        <p class="text-gray-300 text-xs">
+                            Lunes a Viernes: 8:00 - 17:00<br>
+                            Sábados: 9:00 - 13:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-red-800 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-300 mb-4 md:mb-0">
+                        &copy; 2025 Liceo de Cultura. Todos los derechos reservados.
+                    </p>
+                    <div class="flex space-x-6 text-xs text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+                        <a href="#" class="hover:text-white transition-colors">Términos de Uso</a>
+                        <a href="#" class="hover:text-white transition-colors">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<script>
+    // Tu JavaScript aquí...
+</script>
+</body>
+</html>

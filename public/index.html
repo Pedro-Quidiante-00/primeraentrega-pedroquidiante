@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Liceo de cultura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-2.css">
+    <link rel="icon" type="image/png" href="/assets/img/logo-4.png">
+</head>
+<body>
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 island-header glass-effect shadow-lg">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center h-20 px-4 sm:px-6 lg:px-8">
+            <div class="logo-container flex-shrink-0">
+                <a href="index.html" class="block">
+                    <div class="h-16 flex items-center justify-start px-4 py-2">
+                        <img src="assets/img/logo-4.png"
+                             alt="Liceo de Cultura Logo"
+                             class="max-h-14 w-auto object-contain">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="hidden md:flex">
+                <ul class="flex items-center space-x-1">
+                    <li>
+                        <a href="index.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            Inicio
+                        </a>
+                    </li>
+                    <!-- MENU --->
+                    <li class="dropdown relative">
+                        <a href="#"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Nuestro Liceo
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-menu absolute top-full left-0 w-64 bg-white rounded-xl shadow-lg py-2 mt-2 border border-gray-200">
+                            <a href="/public/historia.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Historia de Nuestro Liceo
+                            </a>
+                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                Documentación
+                            </a>
+                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                </svg>
+                                Malla Curricular
+                            </a>
+                            <a href="/public/cra.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                                CRA
+                            </a>
+                            <a href="/public/infraestructura.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                                Infraestructura
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="index.html#especialidades"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                            Especialidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/inscripciones.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                            Inscripciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/public/contacto.html"
+                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.83 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="mobile-menu-button"
+                    class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 p-1 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                    aria-label="Abrir menú">
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden hidden mobile-menu glass-effect border-t border-red-700">
+            <ul class="py-4 space-y-2">
+                <li>
+                    <a href="index.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <button class="mobile-submenu-trigger w-full flex items-center justify-between px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl" data-target="nuestro-liceo">
+                        <span class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Nuestro Liceo
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-200 svg-no-fill mobile-arrow" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div id="submenu-nuestro-liceo" class="mobile-submenu mx-8">
+                        <a href="/public/historia.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Historia
+                        </a>
+                        <a href="/public/documentación.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Documentación
+                        </a>
+                        <a href="/public/malla-curricular.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                            Malla Curricular
+                        </a>
+                        <a href="/public/cra.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                            CRA
+                        </a>
+                        <a href="/public/infraestructura.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Infraestructura
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="index.html#especialidades"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Especialidades
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inscripciones.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                        Inscripciones
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html"
+                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.83 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- BODY PARTE 1 [INTRODUCCCION] -->
+<section class="fullscreen-hero flex flex-row items-center justify-center bg-cover bg-center bg-no-repeat"
+         style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/bg-img-02.png');">
+    <div class="flex flex-col items-center w-full gap-6 px-4">
+        <div class="px-12 py-8 rounded-2xl shadow-2xl">
+            <h1 class="text-center font-black text-white"
+                style="font-size: clamp(3rem, 8vw, 7rem); line-height: 0.9; letter-spacing: 0.1em; margin: 0; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                LICEO DE CULTURA
+            </h1>
+        </div>
+        <p class="text-center text-white font-bold"
+           style="font-size: clamp(1.5rem, 5vw, 3rem); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+            ¡¡El arte está en todas partes!!
+        </p>
+        <a href="#especialidades"
+           class="no-underline text-2xl text-white font-bold px-8 py-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-3xl"
+           style="background:#7F1D1D;;
+                  box-shadow: 0 10px 25px rgba(127, 29, 29, 0.4), 0 0 20px rgba(220, 38, 38, 0.3);
+                  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">
+            Descubre Nuestras Especialidades
+        </a>
+    </div>
+</section>
+<!-- BODY PARTE 2 [NOTICIAS] -->
+<section class="py-16 px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+                Últimas Noticias
+            </h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Mantente al día con las últimas novedades, eventos y logros de nuestro liceo.
+            </p>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto">
+            <div class="overflow-hidden rounded-2xl shadow-2xl">
+                <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+
+                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-00.png');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-8">
+                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                                        Eventos
+                                    </span>
+                                <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
+                                    Festival de Artes 2024: Una Celebración de Creatividad
+                                </h3>
+                                <p class="text-gray-200 leading-relaxed">
+                                    Nuestros estudiantes brillaron en el festival anual mostrando sus talentos en todas las disciplinas artísticas.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="text-yellow-300 font-semibold">Leer más →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-01.png');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-8">
+                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                                        Logros
+                                    </span>
+                                <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
+                                    Estudiantes Ganan Concurso Nacional de Música
+                                </h3>
+                                <p class="text-gray-200 leading-relaxed">
+                                    El coro y la banda del liceo obtuvieron el primer lugar en el prestigioso concurso nacional de música estudiantil.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="text-yellow-300 font-semibold">Leer más →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-02.png');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-8">
+                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                                        Inauguración
+                                    </span>
+                                <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
+                                    Nuevos Estudios de Grabación y Salas de Danza
+                                </h3>
+                                <p class="text-gray-200 leading-relaxed">
+                                    Inauguramos modernas instalaciones equipadas con tecnología de última generación para potenciar el aprendizaje.
+                                </p>
+                                <div class="mt-4">
+                                    <span class="text-yellow-300 font-semibold">Leer más →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button id="carousel-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#7F1D1D] rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <button id="carousel-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#7F1D1D] rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="w-3 h-3 rounded-full bg-[#7F1D1D] transition-all duration-200 carousel-dot" data-slide="0" id="dot-0"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-400 hover:bg-[#7F1D1D] transition-all duration-200 carousel-dot" data-slide="1" id="dot-1"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-400 hover:bg-[#7F1D1D] transition-all duration-200 carousel-dot" data-slide="2" id="dot-2"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BODY PARTE 3 [SOBRE NOSOTROS] -->
+<section class="flex items-center justify-center py-16 px-8">
+    <div class="flex max-w-6xl w-full gap-8">
+        <div class="flex-1 flex flex-col justify-center">
+            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+                Sobre nosotros
+            </h2>
+            <p class="text-justify text-black leading-relaxed text-lg">
+                El Liceo de Cultura es una institución educativa comprometida con la formación integral de sus estudiantes. Con más de 25 años de experiencia, nos dedicamos a brindar una educación de calidad que combine la excelencia académica con el desarrollo de valores humanos.
+                <br><br>
+                Nuestra metodología innovadora y nuestro equipo de profesionales altamente calificados nos permiten ofrecer una experiencia educativa única, preparando a nuestros estudiantes para los desafíos del siglo XXI.
+            </p>
+        </div>
+        <div class="flex-1 flex items-center justify-center">
+            <div class="w-full h-96 rounded-2xl border-8 border-red-950 flex items-center justify-center overflow-hidden">
+                <img src="assets/img/img-banda.png" alt="Estudiantes de banda musical del Liceo de Cultura" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BODY PARTE 4 [ESPECIALIDADES ARTISTICAS] -->
+<section id="especialidades" class="py-16 px-8 ">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+                Nuestras Especialidades Artísticas
+            </h2>
+            <p class="text-lg text-black max-w-2xl mx-auto">
+                Descubre las diferentes disciplinas artísticas que ofrecemos en nuestro liceo, cada una diseñada para desarrollar tu creatividad y talento.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+                <div class="card-icon visual-arts"></div>
+                <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
+                    Artes Visuales
+                </h3>
+                <p class="text-black text-center leading-relaxed">
+                    Explora tu creatividad a través de la pintura, dibujo, escultura y técnicas mixtas. Desarrolla tu visión artística única.
+                </p>
+                <div class="mt-6 text-center">
+                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Conocer más →
+                        </span>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+                <div class="card-icon audiovisual"></div>
+                <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
+                    Audiovisual/Cine
+                </h3>
+                <p class="text-black text-center leading-relaxed">
+                    Aprende el arte de contar historias a través de la imagen y el sonido. Desde guion hasta postproducción.
+                </p>
+                <div class="mt-6 text-center">
+                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Conocer más →
+                        </span>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+                <div class="card-icon music"></div>
+                <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
+                    Música
+                </h3>
+                <p class="text-black text-center leading-relaxed">
+                    Desarrolla tu talento musical con instrumentos, teoría musical, composición y ensambles grupales.
+                </p>
+                <div class="mt-6 text-center">
+                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Conocer más →
+                        </span>
+                </div>
+            </div>
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+                <div class="card-icon dance"></div>
+                <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
+                    Danza
+                </h3>
+                <p class="text-black text-center leading-relaxed">
+                    Expresa emociones a través del movimiento. Explora diferentes estilos desde clásico hasta contemporáneo.
+                </p>
+                <div class="mt-6 text-center">
+                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Conocer más →
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BODY PARTE 5 [SELLOS INSTITUCIONALES] -->
+<section class="py-16 px-8 bg-gradient-to-r from-gray-100 to-gray-200">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+                Sellos Institucionales
+            </h2>
+            <div class="w-24 h-1 bg-[#7F1D1D] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <div class="group">
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl...">
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="assets/img/bg-img-02.png" alt="Imagen representativa de la misión del Liceo de Cultura" class="w-full h-full object-cover...">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-[#7F1D1D] mb-4 group-hover:text-red-700 transition-colors">
+                        Nuestra Misión
+                    </h3>
+
+                    <p class="text-gray-700 text-center leading-relaxed text-lg">
+                        Formar estudiantes integrales a través de una educación artística de excelencia, fomentando la creatividad, el pensamiento crítico y los valores humanos. Preparamos a nuestros jóvenes para ser agentes de cambio positivo en la sociedad, desarrollando sus talentos artísticos y académicos con pasión y dedicación.
+                    </p>
+
+                    <div class="flex justify-center mt-6">
+                        <div class="w-16 h-1 bg-gradient-to-r from-[#7F1D1D] to-red-400 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-xl...">
+                        <div class="w-full h-48 overflow-hidden">
+                            <img src="assets/img/bg-img-02.png" alt="Imagen representativa de la visión del Liceo de Cultura" class="w-full h-full object-cover...">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-[#7F1D1D] mb-4 group-hover:text-red-700 transition-colors">
+                        Nuestra Visión
+                    </h3>
+
+                    <p class="text-gray-700 text-center leading-relaxed text-lg">
+                        Ser reconocidos como la institución educativa líder en formación artística integral, donde cada estudiante desarrolle al máximo su potencial creativo y humano. Aspiramos a ser un referente de innovación educativa, contribuyendo al desarrollo cultural de nuestra comunidad y formando ciudadanos comprometidos con el arte y la sociedad.
+                    </p>
+
+                    <div class="flex justify-center mt-6">
+                        <div class="w-16 h-1 bg-gradient-to-r from-[#7F1D1D] to-red-400 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- BODY PARTE 6 [SERVICIOS Y RECURSOS] -->
+<section class="py-16 px-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+                Servicios y Recursos
+            </h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Descubre todos los servicios y recursos disponibles para apoyar tu experiencia educativa en nuestro liceo.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div class="group cursor-pointer service-card" data-url="#">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
+                            Documentación
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Accede a formularios, certificados, reglamentos y toda la documentación oficial del establecimiento.
+                        </p>
+
+                        <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
+                            <a href="documentación.html">Acceder →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer service-card" data-url="#">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A1.25,1.25 0 0,1 13.25,10A1.25,1.25 0 0,1 12,11.25A1.25,1.25 0 0,1 10.75,10A1.25,1.25 0 0,1 12,8.75M12,6.5A3.5,3.5 0 0,0 8.5,10A3.5,3.5 0 0,0 12,13.5A3.5,3.5 0 0,0 15.5,10A3.5,3.5 0 0,0 12,6.5Z"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
+                            Infraestructura
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Conoce nuestras modernas instalaciones, salas especializadas y espacios de aprendizaje.
+                        </p>
+
+                        <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
+                            Explorar →
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer service-card" data-url="#">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.66 22.5,21.66C22.75,21.66 23,21.41 23,21.16V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C20.38,18.78 19.7,18.66 19,18.66C17.45,18.66 15.25,19.15 13.5,20.05V8.5C11.9,7.5 9.65,6.5 6.5,6.5C5.05,6.5 3.1,6.94 1.75,7.59V20.6C3.1,19.94 5.05,19.5 6.5,19.5C8.45,19.5 10.55,19.9 12,21C13.35,20.15 15.8,19.5 17.5,19.5C19.15,19.5 20.85,19.81 22.25,20.56V6.81C20.85,6.05 19.15,5.84 17.5,5.84C15.8,5.84 13.35,6.5 12,7.34C10.55,6.4 8.45,5.5 6.5,5.5Z"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
+                            Biblioteca CRA
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Explora nuestro Centro de Recursos de Aprendizaje con material bibliográfico y digital.
+                        </p>
+
+                        <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
+                            Visitar →
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer service-card" data-url="#">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
+                            Orientación
+                        </h3>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Recibe apoyo académico, vocacional y personal de nuestros orientadores especializados.
+                        </p>
+
+                        <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
+                            Consultar →
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- IMAGEN DE FONDO -->
+<div class="relative">
+    <div class="absolute bottom-0 left-0 z-[-1] w-0.1">
+        <img src="assets/img/bg-img-04.png" alt="Imagen decorativa del Liceo de Cultura" class="w-full h-auto object-cover opacity-50">
+    </div>
+    <div class="h-40 relative z-10"></div>
+</div>
+<!-- FOOTER -->
+<section>
+    <footer class="w-full px-8 bg-red-900 text-white py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Liceo de Cultura</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        Formando estudiantes integrales a través de una educación artística de excelencia,
+                        fomentando la creatividad y los valores humanos desde hace más de 25 años.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mt-1 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z"/>
+                            </svg>
+                            <div>
+                                <p class="text-gray-300 text-sm leading-relaxed">
+                                    Av. Principal #123<br>
+                                    Centro, Ciudad<br>
+                                    Código Postal 12345
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <a href="tel:+56912345678" class="text-gray-300 hover:text-white transition-colors">
+                                +56 9 1234 5678
+                            </a>
+                        </div>
+
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <a href="mailto:contacto@liceodecultura.cl" class="text-gray-300 hover:text-white transition-colors">
+                                contacto@liceodecultura.cl
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8zm7.119 0c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="mt-6">
+                        <h5 class="text-sm font-semibold mb-2 text-red-300">Horario de Atención</h5>
+                        <p class="text-gray-300 text-xs">
+                            Lunes a Viernes: 8:00 - 17:00<br>
+                            Sábados: 9:00 - 13:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-red-800 pt-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-300 mb-4 md:mb-0">
+                        &copy; 2025 Liceo de Cultura. Todos los derechos reservados.
+                    </p>
+                    <div class="flex space-x-6 text-xs text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+                        <a href="#" class="hover:text-white transition-colors">Términos de Uso</a>
+                        <a href="#" class="hover:text-white transition-colors">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script>
+    // Variables globales del carrusel
+    let currentSlide = 0;
+    const totalSlides = 3;
+
+    // Inicialización principal cuando el DOM está listo
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeMobileMenus();
+        initializeClickHandlers();
+        initializeCarousel();
+        initializeNavigation();
+    });
+
+    // Función para inicializar submenús móviles
+    function initializeMobileMenus() {
+        const mobileSubmenus = document.querySelectorAll('.mobile-submenu');
+        mobileSubmenus.forEach(submenu => {
+            submenu.style.display = 'none';
+            submenu.classList.add('hidden');
+        });
+
+        // Event listeners para botones de submenú móvil
+        const mobileSubmenuTriggers = document.querySelectorAll('.mobile-submenu-trigger');
+        mobileSubmenuTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                const targetId = this.dataset.target;
+                const submenu = document.getElementById(`submenu-${targetId}`);
+                const arrow = this.querySelector('.mobile-arrow');
+
+                if (submenu && arrow) {
+                    const isHidden = submenu.style.display === 'none' ||
+                        submenu.style.display === '' ||
+                        submenu.classList.contains('hidden');
+
+                    if (isHidden) {
+                        submenu.style.display = 'block';
+                        submenu.classList.remove('hidden');
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        submenu.style.display = 'none';
+                        submenu.classList.add('hidden');
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        });
+    }
+
+    // Función para inicializar conductor de clics
+    function initializeClickHandlers() {
+        // Service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const url = this.dataset.url;
+                if (url && url !== '#') {
+                    window.location.href = url;
+                }
+            });
+        });
+
+        // News cards
+        const newsCards = document.querySelectorAll('.news-card');
+        newsCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const url = this.dataset.url;
+                if (url && url !== '#') {
+                    window.location.href = url;
+                }
+            });
+        });
+
+        // Specialty cards
+        const specialtyCards = document.querySelectorAll('.specialty-card');
+        specialtyCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const url = this.dataset.url;
+                if (url && url !== '#') {
+                    window.location.href = url;
+                }
+            });
+        });
+    }
+
+    // Función para inicializar el carrusel
+    function initializeCarousel() {
+        const carousel = document.getElementById('carousel');
+        if (!carousel) return;
+
+        // Botones de navegación del carrusel
+        const prevButton = document.getElementById('carousel-prev');
+        const nextButton = document.getElementById('carousel-next');
+
+        if (prevButton) {
+            prevButton.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            });
+        }
+
+        // Indicadores del carrusel
+        const carouselDots = document.querySelectorAll('.carousel-dot');
+        carouselDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                currentSlide = parseInt(this.dataset.slide);
+                updateCarousel();
+            });
+        });
+
+        // Auto-play del carrusel
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }, 5000);
+
+        // Navegación con teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            } else if (e.key === 'ArrowRight') {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }
+        });
+    }
+
+    // Función para actualizar el carrusel
+    function updateCarousel() {
+        const carousel = document.getElementById('carousel');
+        if (!carousel) return;
+
+        const translateX = -currentSlide * 100;
+        carousel.style.transform = `translateX(${translateX}%)`;
+
+        // Actualizar indicadores
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.getElementById(`dot-${i}`);
+            if (dot) {
+                if (i === currentSlide) {
+                    dot.classList.remove('bg-gray-400');
+                    dot.classList.add('bg-[#7F1D1D]');
+                } else {
+                    dot.classList.remove('bg-[#7F1D1D]');
+                    dot.classList.add('bg-gray-400');
+                }
+            }
+        }
+    }
+
+    // Función para inicializar la navegación
+    function initializeNavigation() {
+        // Funcionalidad del menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuButton.classList.add('hamburger-active');
+                    mobileMenuButton.setAttribute('aria-label', 'Cerrar menú');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.classList.remove('hamburger-active');
+                    mobileMenuButton.setAttribute('aria-label', 'Abrir menú');
+                }
+            });
+
+            // Cerrar menú móvil al hacer clic en un enlace
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.classList.remove('hamburger-active');
+                    isMenuOpen = false;
+                    mobileMenuButton.setAttribute('aria-label', 'Abrir menú');
+                });
+            });
+        }
+
+        // Scroll suave para enlaces de navegación
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                if (targetSection) {
+                    const header = document.querySelector('header');
+                    const headerHeight = header ? header.offsetHeight : 0;
+                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Observador para destacar enlaces activos
+        const sections = document.querySelectorAll('section[id]');
+        if (sections.length > 0) {
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remover clase activa de todos los enlaces
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('bg-white', 'bg-opacity-20', 'text-yellow-200');
+                        });
+
+                        // Agregar clase activa al enlace correspondiente
+                        const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+                        if (activeLink && activeLink.classList.contains('nav-link')) {
+                            activeLink.classList.add('bg-white', 'bg-opacity-20', 'text-yellow-200');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        }
+
+        // Efecto de parallax en el header
+        let ticking = false;
+
+        function updateHeader() {
+            const scrolled = window.scrollY;
+            const header = document.querySelector('header');
+            if (header) {
+                const opacity = Math.max(0.9, 1 - scrolled / 200);
+                header.style.background = `rgba(127, 29, 29, ${opacity})`;
+            }
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateHeader);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+    }
+</script>
+</body>
+</html>
