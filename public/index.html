@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Liceo de cultura</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-2.css">
-    <link rel="icon" type="image/png" href="/assets/img/logo-4.png">
+    <link rel="icon" type="image/png" href="/assets/img/general/logo-4.png">
 </head>
 <body>
 <!-- HEADER -->
@@ -16,13 +16,12 @@
             <div class="logo-container flex-shrink-0">
                 <a href="index.html" class="block">
                     <div class="h-16 flex items-center justify-start px-4 py-2">
-                        <img src="assets/img/logo-4.png"
+                        <img src="assets/img/general/logo-4.png"
                              alt="Liceo de Cultura Logo"
                              class="max-h-14 w-auto object-contain">
                     </div>
                 </a>
             </div>
-
             <nav class="hidden md:flex">
                 <ul class="flex items-center space-x-1">
                     <li>
@@ -38,7 +37,7 @@
                     <li class="dropdown relative">
                         <a href="#"
                            class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill " stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                             </svg>
                             Nuestro Liceo
@@ -48,31 +47,36 @@
                         </a>
 
                         <div class="dropdown-menu absolute top-full left-0 w-64 bg-white rounded-xl shadow-lg py-2 mt-2 border border-gray-200">
-                            <a href="/public/historia.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                            <!-- HISTORIA -->
+                            <a href="blog/historia.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 Historia de Nuestro Liceo
                             </a>
-                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                            <!-- DOCUMENTACIÓN -->
+                            <a href="blog/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                 </svg>
                                 Documentación
                             </a>
-                            <a href="/public/documentación.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                            <!-- MALLA CURRICULAR -->
+                            <a href="blog/malla-curricular.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                                 </svg>
                                 Malla Curricular
                             </a>
-                            <a href="/public/cra.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                            <!-- CRA -->
+                            <a href="blog/cra.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                                 </svg>
                                 CRA
                             </a>
-                            <a href="/public/infraestructura.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
+                            <!-- INFRAESTRUCTURA -->
+                            <a href="blog/infraestructura.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                                 </svg>
@@ -80,7 +84,7 @@
                             </a>
                         </div>
                     </li>
-
+                    <!-- ESPECIALIDADES -->
                     <li>
                         <a href="index.html#especialidades"
                            class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
@@ -90,19 +94,9 @@
                             Especialidades
                         </a>
                     </li>
-
+                    <!-- CONTACTO -->
                     <li>
-                        <a href="/public/inscripciones.html"
-                           class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl ">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                            </svg>
-                            Inscripciones
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/public/contacto.html"
+                        <a href="contacto.html"
                            class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.83 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -112,7 +106,7 @@
                     </li>
                 </ul>
             </nav>
-
+            <!-- BOTÓN HAMBURGUESA -->
             <button id="mobile-menu-button"
                     class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 p-1 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all duration-300"
                     aria-label="Abrir menú">
@@ -121,10 +115,11 @@
                 <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
             </button>
         </div>
-
-        <nav id="mobile-menu" class="md:hidden hidden mobile-menu glass-effect border-t border-red-700">
+<!-- MENU MOVIL -->
+        <nav id="mobile-menu" class="md:hidden mobile-menu glass-effect border-t border-red-700">
             <ul class="py-4 space-y-2">
                 <li>
+                    <!-- MENU MOVIL -->
                     <a href="index.html"
                        class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,31 +142,31 @@
                     </button>
 
                     <div id="submenu-nuestro-liceo" class="mobile-submenu mx-8">
-                        <a href="/public/historia.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                        <a href="blog/historia.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                             Historia
                         </a>
-                        <a href="/public/documentación.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                        <a href="blog/documentación.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                             </svg>
                             Documentación
                         </a>
-                        <a href="/public/malla-curricular.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                        <a href="blog/malla-curricular.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                             </svg>
                             Malla Curricular
                         </a>
-                        <a href="/public/cra.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                        <a href="blog/cra.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
                             CRA
                         </a>
-                        <a href="/public/infraestructura.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
+                        <a href="blog/infraestructura.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                             </svg>
@@ -179,7 +174,6 @@
                         </a>
                     </div>
                 </li>
-
                 <li>
                     <a href="index.html#especialidades"
                        class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
@@ -189,17 +183,6 @@
                         Especialidades
                     </a>
                 </li>
-
-                <li>
-                    <a href="inscripciones.html"
-                       class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                        </svg>
-                        Inscripciones
-                    </a>
-                </li>
-
                 <li>
                     <a href="contacto.html"
                        class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
@@ -215,7 +198,7 @@
 </header>
 <!-- BODY PARTE 1 [INTRODUCCCION] -->
 <section class="fullscreen-hero flex flex-row items-center justify-center bg-cover bg-center bg-no-repeat"
-         style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/bg-img-02.png');">
+         style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/general/bg-img-02.png');">
     <div class="flex flex-col items-center w-full gap-6 px-4">
         <div class="px-12 py-8 rounded-2xl shadow-2xl">
             <h1 class="text-center font-black text-white"
@@ -251,14 +234,13 @@
         <div class="relative max-w-4xl mx-auto">
             <div class="overflow-hidden rounded-2xl shadow-2xl">
                 <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-
-                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
-                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-00.png');">
+                    <a href="blog/noticia-1.html" class="block w-full flex-shrink-0 relative cursor-pointer group">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/articles/img-noti-00.png');">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 right-0 p-8">
-                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                                        Eventos
-                                    </span>
+                                <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                                    Eventos
+                                </span>
                                 <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
                                     Festival de Artes 2024: Una Celebración de Creatividad
                                 </h3>
@@ -270,15 +252,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
-                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-01.png');">
+                    </a>
+                    <a href="blog/noticia-2.html" class="block w-full flex-shrink-0 relative cursor-pointer group">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/articles/img-noti-01.png');">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 right-0 p-8">
-                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                                        Logros
-                                    </span>
+                                <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                                    Logros
+                                </span>
                                 <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
                                     Estudiantes Ganan Concurso Nacional de Música
                                 </h3>
@@ -290,15 +271,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="w-full flex-shrink-0 relative cursor-pointer group" onclick="window.location.href='#'">
-                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/img-noti-02.png');">
+                    </a>
+                    <a href="blog/noticia-3.html" class="block w-full flex-shrink-0 relative cursor-pointer group">
+                        <div class="relative h-96 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/articles/img-noti-02.png');">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 right-0 p-8">
-                                    <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
-                                        Inauguración
-                                    </span>
+            <span class="inline-block bg-[#7F1D1D] text-white px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                Inauguración
+            </span>
                                 <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
                                     Nuevos Estudios de Grabación y Salas de Danza
                                 </h3>
@@ -310,11 +290,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </div>
             </div>
-
             <button id="carousel-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#7F1D1D] rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -336,7 +314,7 @@
     </div>
 </section>
 <!-- BODY PARTE 3 [SOBRE NOSOTROS] -->
-<section class="flex items-center justify-center py-16 px-8">
+<section class="flex items-center justify-center py-16 px-8 bg-gradient-to-r from-gray-100 to-gray-200">
     <div class="flex max-w-6xl w-full gap-8">
         <div class="flex-1 flex flex-col justify-center">
             <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
@@ -350,7 +328,7 @@
         </div>
         <div class="flex-1 flex items-center justify-center">
             <div class="w-full h-96 rounded-2xl border-8 border-red-950 flex items-center justify-center overflow-hidden">
-                <img src="assets/img/img-banda.png" alt="Estudiantes de banda musical del Liceo de Cultura" class="w-full h-full object-cover">
+                <img src="assets/img/articles/img-banda.png" alt="Estudiantes de banda musical del Liceo de Cultura" class="w-full h-full object-cover">
             </div>
         </div>
     </div>
@@ -366,9 +344,9 @@
                 Descubre las diferentes disciplinas artísticas que ofrecemos en nuestro liceo, cada una diseñada para desarrollar tu creatividad y talento.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-specialty="visuales">
                 <div class="card-icon visual-arts"></div>
                 <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
                     Artes Visuales
@@ -377,13 +355,13 @@
                     Explora tu creatividad a través de la pintura, dibujo, escultura y técnicas mixtas. Desarrolla tu visión artística única.
                 </p>
                 <div class="mt-6 text-center">
-                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            Conocer más →
-                        </span>
+                    <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        Conocer más →
+                    </span>
                 </div>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-specialty="audiovisual">
                 <div class="card-icon audiovisual"></div>
                 <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
                     Audiovisual/Cine
@@ -392,13 +370,13 @@
                     Aprende el arte de contar historias a través de la imagen y el sonido. Desde guion hasta postproducción.
                 </p>
                 <div class="mt-6 text-center">
-                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            Conocer más →
-                        </span>
+                    <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        Conocer más →
+                    </span>
                 </div>
             </div>
 
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-specialty="musica">
                 <div class="card-icon music"></div>
                 <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
                     Música
@@ -407,12 +385,13 @@
                     Desarrolla tu talento musical con instrumentos, teoría musical, composición y ensambles grupales.
                 </p>
                 <div class="mt-6 text-center">
-                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            Conocer más →
-                        </span>
+                    <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        Conocer más →
+                    </span>
                 </div>
             </div>
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-url="#">
+
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-specialty="danza">
                 <div class="card-icon dance"></div>
                 <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
                     Danza
@@ -421,14 +400,38 @@
                     Expresa emociones a través del movimiento. Explora diferentes estilos desde clásico hasta contemporáneo.
                 </p>
                 <div class="mt-6 text-center">
-                        <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
-                            Conocer más →
-                        </span>
+                    <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        Conocer más →
+                    </span>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg cursor-pointer border-2 border-transparent hover:border-[#7F1D1D] specialty-card" data-specialty="visuales">
+                <div class="card-icon theater"></div>
+                <h3 class="text-xl font-bold text-center text-[#7F1D1D] mb-4">
+                    Teatro
+                </h3>
+                <p class="text-black text-center leading-relaxed">
+                    Desarrolla tus habilidades escénicas y de expresión dramática. El arte de interpretar y emocionar.
+                </p>
+                <div class="mt-6 text-center">
+                    <span class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        Conocer más →
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- POPUP DE ESPECIALIDADES -->
+<div id="specialty-popup" class="popup-overlay">
+    <div class="popup-content">
+        <button class="close-btn" aria-label="Cerrar">✕</button>
+        <div id="specialty-popup-body" class="p-8">
+            <!-- Contenido dinámico -->
+        </div>
+    </div>
+</div>
 <!-- BODY PARTE 5 [SELLOS INSTITUCIONALES] -->
 <section class="py-16 px-8 bg-gradient-to-r from-gray-100 to-gray-200">
     <div class="max-w-6xl mx-auto">
@@ -445,7 +448,7 @@
                 <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
                     <div class="bg-white rounded-3xl overflow-hidden shadow-xl...">
                         <div class="w-full h-48 overflow-hidden">
-                            <img src="assets/img/bg-img-02.png" alt="Imagen representativa de la misión del Liceo de Cultura" class="w-full h-full object-cover...">
+                            <img src="assets/img/general/bg-img-02.png" alt="Imagen representativa de la misión del Liceo de Cultura" class="w-full h-full object-cover...">
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-center text-[#7F1D1D] mb-4 group-hover:text-red-700 transition-colors">
@@ -466,7 +469,7 @@
                 <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105">
                     <div class="bg-white rounded-3xl overflow-hidden shadow-xl...">
                         <div class="w-full h-48 overflow-hidden">
-                            <img src="assets/img/bg-img-02.png" alt="Imagen representativa de la visión del Liceo de Cultura" class="w-full h-full object-cover...">
+                            <img src="assets/img/general/bg-img-02.png" alt="Imagen representativa de la visión del Liceo de Cultura" class="w-full h-full object-cover...">
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-center text-[#7F1D1D] mb-4 group-hover:text-red-700 transition-colors">
@@ -490,7 +493,7 @@
 <section class="py-16 px-8">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-[40px] font-bold text-black mb-4 drop-shadow-xl">
+            <h2 class="text-4xl font-bold text-black mb-4 drop-shadow-xl">
                 Servicios y Recursos
             </h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -498,99 +501,66 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-            <div class="group cursor-pointer service-card" data-url="#">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+            <div class="group cursor-pointer service-card">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
                     <div class="text-center">
                         <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
                             </svg>
                         </div>
-
                         <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
                             Documentación
                         </h3>
-
                         <p class="text-gray-600 leading-relaxed mb-4">
                             Accede a formularios, certificados, reglamentos y toda la documentación oficial del establecimiento.
                         </p>
-
                         <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
-                            <a href="documentación.html">Acceder →</a>
+                            <a href="blog/documentación.html">Acceder →</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="group cursor-pointer service-card" data-url="#">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+            <div class="group cursor-pointer service-card">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
                     <div class="text-center">
                         <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A1.25,1.25 0 0,1 13.25,10A1.25,1.25 0 0,1 12,11.25A1.25,1.25 0 0,1 10.75,10A1.25,1.25 0 0,1 12,8.75M12,6.5A3.5,3.5 0 0,0 8.5,10A3.5,3.5 0 0,0 12,13.5A3.5,3.5 0 0,0 15.5,10A3.5,3.5 0 0,0 12,6.5Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M12,3L2,12H5V20H19V12H22L12,3M12,8.75A1.25,1.25 0 0,1 13.25,10A1.25,1.25 0 0,1 12,11.25A1.25,1.25 0 0,1 10.75,10A1.25,1.25 0 0,1 12,8.75M12,6.5A3.5,3.5 0 0,0 8.5,10A3.5,3.5 0 0,0 12,13.5A3.5,3.5 0 0,0 15.5,10A3.5,3.5 0 0,0 12,6.5Z"/>
                             </svg>
                         </div>
-
                         <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
                             Infraestructura
                         </h3>
-
                         <p class="text-gray-600 leading-relaxed mb-4">
                             Conoce nuestras modernas instalaciones, salas especializadas y espacios de aprendizaje.
                         </p>
-
                         <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
-                            Explorar →
+                            <a href="blog/infraestructura.html">Explorar →</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="group cursor-pointer service-card" data-url="#">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
+            <div class="group cursor-pointer service-card">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
                     <div class="text-center">
                         <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.66 22.5,21.66C22.75,21.66 23,21.41 23,21.16V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C20.38,18.78 19.7,18.66 19,18.66C17.45,18.66 15.25,19.15 13.5,20.05V8.5C11.9,7.5 9.65,6.5 6.5,6.5C5.05,6.5 3.1,6.94 1.75,7.59V20.6C3.1,19.94 5.05,19.5 6.5,19.5C8.45,19.5 10.55,19.9 12,21C13.35,20.15 15.8,19.5 17.5,19.5C19.15,19.5 20.85,19.81 22.25,20.56V6.81C20.85,6.05 19.15,5.84 17.5,5.84C15.8,5.84 13.35,6.5 12,7.34C10.55,6.4 8.45,5.5 6.5,5.5Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.66 22.5,21.66C22.75,21.66 23,21.41 23,21.16V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C20.38,18.78 19.7,18.66 19,18.66C17.45,18.66 15.25,19.15 13.5,20.05V8.5C11.9,7.5 9.65,6.5 6.5,6.5C5.05,6.5 3.1,6.94 1.75,7.59V20.6C3.1,19.94 5.05,19.5 6.5,19.5C8.45,19.5 10.55,19.9 12,21C13.35,20.15 15.8,19.5 17.5,19.5C19.15,19.5 20.85,19.81 22.25,20.56V6.81C20.85,6.05 19.15,5.84 17.5,5.84C15.8,5.84 13.35,6.5 12,7.34C10.55,6.4 8.45,5.5 6.5,5.5Z"/>
                             </svg>
                         </div>
-
                         <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
                             Biblioteca CRA
                         </h3>
-
                         <p class="text-gray-600 leading-relaxed mb-4">
                             Explora nuestro Centro de Recursos de Aprendizaje con material bibliográfico y digital.
                         </p>
-
                         <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
-                            Visitar →
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group cursor-pointer service-card" data-url="#">
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 border-2 border-transparent hover:border-[#7F1D1D]">
-                    <div class="text-center">
-                        <div class="w-16 h-16 mx-auto mb-6 bg-[#7F1D1D] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
-                            </svg>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-[#7F1D1D] mb-4 group-hover:text-red-800 transition-colors">
-                            Orientación
-                        </h3>
-
-                        <p class="text-gray-600 leading-relaxed mb-4">
-                            Recibe apoyo académico, vocacional y personal de nuestros orientadores especializados.
-                        </p>
-
-                        <div class="inline-block bg-[#7F1D1D] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-red-800 transition-colors">
-                            Consultar →
+                            <a href="blog/cra.html">Explorar →</a>
                         </div>
                     </div>
                 </div>
@@ -602,7 +572,7 @@
 <!-- IMAGEN DE FONDO -->
 <div class="relative">
     <div class="absolute bottom-0 left-0 z-[-1] w-0.1">
-        <img src="assets/img/bg-img-04.png" alt="Imagen decorativa del Liceo de Cultura" class="w-full h-auto object-cover opacity-50">
+        <img src="assets/img/general/bg-img-04.png" alt="Imagen decorativa del Liceo de Cultura" class="w-full h-auto object-cover opacity-50">
     </div>
     <div class="h-40 relative z-10"></div>
 </div>
@@ -624,21 +594,21 @@
                     <h4 class="text-lg font-semibold mb-4">Contacto</h4>
                     <div class="space-y-3">
                         <div class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mt-1 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mt-1 mr-3 flex-shrink-0" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z"/>
                             </svg>
                             <div>
                                 <p class="text-gray-300 text-sm leading-relaxed">
-                                    Av. Principal #123<br>
-                                    Centro, Ciudad<br>
-                                    Código Postal 12345
+                                    Pasaje Los Franciscanos s/n<br>
+                                    Gamboa<br>
+                                    Código Postal 5700000
                                 </p>
                             </div>
                         </div>
 
                         <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
                             </svg>
                             <a href="tel:+56912345678" class="text-gray-300 hover:text-white transition-colors">
                                 +56 9 1234 5678
@@ -646,8 +616,8 @@
                         </div>
 
                         <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0 svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-300 mr-3 flex-shrink-0" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
                             </svg>
                             <a href="mailto:contacto@liceodecultura.cl" class="text-gray-300 hover:text-white transition-colors">
                                 contacto@liceodecultura.cl
@@ -659,25 +629,17 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        <a href="https://www.facebook.com/escueladeculturacastro/?locale=es_LA" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
-
-                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8zm7.119 0c-1.297 0-2.448-.73-3.016-1.8-.568-1.07-.568-2.39 0-3.46.568-1.07 1.719-1.8 3.016-1.8s2.448.73 3.016 1.8c.568 1.07.568 2.39 0 3.46-.568 1.07-1.719 1.8-3.016 1.8z"/>
-                            </svg>
-                        </a>
-
-                        <a href="#" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:scale-110 transition-transform svg-fill-white" viewBox="0 0 24 24">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        <a href="https://www.instagram.com/liceodecultura" class="w-10 h-10 bg-red-800 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors group">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 text-white group-hover:scale-110 transition-transform">
+                                <path fill="currentColor" d="M12 2c-2.717 0-3.056.01-4.122.06-1.065.05-1.79.217-2.428.465a4.902 4.902 0 0 0-1.772 1.153A4.902 4.902 0 0 0 2.52 5.45c-.248.638-.415 1.363-.465 2.428C2.01 8.944 2 9.283 2 12s.01 3.056.06 4.122c.05 1.065.217 1.79.465 2.428a4.902 4.902 0 0 0 1.153 1.772c.47.47 1.01.866 1.63.994.638.248 1.363.415 2.428.465C8.944 21.99 9.283 22 12 22s3.056-.01 4.122-.06c1.065-.05 1.79-.217 2.428-.465a4.902 4.902 0 0 0 1.772-1.153c.47-.47.866-1.01.994-1.63.248-.638.415-1.363.465-2.428.05-1.066.06-1.405.06-4.122s-.01-3.056-.06-4.122c-.05-1.065-.217-1.79-.465-2.428a4.902 4.902 0 0 0-1.153-1.772A4.902 4.902 0 0 0 18.55.52c-.638-.248-1.363-.415-2.428-.465C15.056 2.01 14.717 2 12 2zm0 1.802c2.67 0 2.987.01 4.042.058c.975.045 1.502.207 1.857.344c.467.182.86.399 1.25.789c.39.39.607.783.789 1.25c.137.354.3.882.344 1.857c.048 1.055.058 1.372.058 4.042s-.01 2.987-.058 4.042c-.045.975-.207 1.502-.344 1.857a3.097 3.097 0 0 1-.789 1.25c-.39.39-.783.607-1.25.789c-.354.137-.882.3-1.857.344c-1.055.048-1.372.058-4.042.058s-2.987-.01-4.042-.058c-.975-.045-1.502-.207-1.857-.344a3.097 3.097 0 0 1-1.25-.789a3.097 3.097 0 0 1-.789-1.25c-.137-.354-.3-.882-.344-1.857C4.01 15.013 4 14.697 4 12s.01-2.987.058-4.042c.045-.975.207-1.502.344-1.857a3.097 3.097 0 0 1 .789-1.25c.39-.39.783.607 1.25-.789c.354-.137.882-.3 1.857-.344C9.013 3.812 9.333 3.802 12 3.802zm0 2.99a5.198 5.198 0 1 0 0 10.396a5.198 5.198 0 1 0 0-10.396zm0 1.802a3.398 3.398 0 1 1 0 6.796a3.398 3.398 0 1 1 0-6.796zm6.406-1.18c0 .798-.646 1.444-1.444 1.444c-.798 0-1.444-.646-1.444-1.444c0-.798.646-1.444 1.444-1.444c.798 0 1.444.646 1.444 1.444z"/>
                             </svg>
                         </a>
                     </div>
-
                     <div class="mt-6">
                         <h5 class="text-sm font-semibold mb-2 text-red-300">Horario de Atención</h5>
                         <p class="text-gray-300 text-xs">
@@ -686,286 +648,193 @@
                         </p>
                     </div>
                 </div>
-            </div>
 
-            <div class="border-t border-red-800 pt-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-sm text-gray-300 mb-4 md:mb-0">
-                        &copy; 2025 Liceo de Cultura. Todos los derechos reservados.
-                    </p>
-                    <div class="flex space-x-6 text-xs text-gray-400">
-                        <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
-                        <a href="#" class="hover:text-white transition-colors">Términos de Uso</a>
-                        <a href="#" class="hover:text-white transition-colors">Contacto</a>
-                    </div>
+            </div> <div class="border-t border-red-800 pt-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-300 mb-4 md:mb-0">
+                    &copy; 2025 Liceo de Cultura. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6 text-xs text-gray-400">
+                    <a href="contacto.html" class="hover:text-white transition-colors">Contacto</a>
                 </div>
             </div>
         </div>
+        </div>
     </footer>
 </section>
+<!-- SCRIPTS -->
 <script>
-    // Variables globales del carrusel
-    let currentSlide = 0;
-    const totalSlides = 3;
+    // --- 1. DATOS DE LAS ESPECIALIDADES (No cambia) ---
+    const especialidadesInfo = {
+        visuales: {
+            titulo: "Artes Visuales",
+            descripcion: "La especialidad de Artes Visuales te permite explorar y desarrollar tu creatividad a través de diversas técnicas y medios artísticos.",
+            contenido: [
+                { subtitulo: "¿Qué aprenderás?", items: ["Dibujo artístico y técnico", "Pintura en diferentes técnicas (óleo, acrílico, acuarela)", "Escultura y modelado", "Grabado y serigrafía", "Arte digital y diseño gráfico", "Historia del arte y análisis de obras"] },
+                { subtitulo: "Salidas Profesionales", items: ["Artista visual independiente", "Diseñador gráfico", "Ilustrador", "Restaurador de obras de arte", "Profesor de artes visuales", "Curador de museos y galerías"] }
+            ]
+        },
+        audiovisual: {
+            titulo: "Audiovisual y Cine",
+            descripcion: "Aprende el arte de contar historias a través de la imagen en movimiento, desde la conceptualización hasta la postproducción.",
+            contenido: [
+                { subtitulo: "¿Qué aprenderás?", items: ["Guión y narrativa audiovisual", "Dirección de fotografía", "Edición y montaje", "Diseño sonoro", "Producción audiovisual", "Animación y efectos visuales"] },
+                { subtitulo: "Salidas Profesionales", items: ["Director de cine o TV", "Camarógrafo", "Editor audiovisual", "Productor audiovisual", "Guionista", "Director de fotografía"] }
+            ]
+        },
+        musica: {
+            titulo: "Música",
+            descripcion: "Desarrolla tu talento musical y conocimiento teórico a través del estudio de instrumentos, composición y performance.",
+            contenido: [
+                { subtitulo: "¿Qué aprenderás?", items: ["Instrumento principal (clásico o contemporáneo)", "Teoría musical y armonía", "Composición y arreglos", "Canto y técnica vocal", "Ensambles y música de cámara", "Producción musical digital"] },
+                { subtitulo: "Salidas Profesionales", items: ["Músico intérprete", "Compositor/Arreglista", "Profesor de música", "Productor musical", "Director de orquesta o coro", "Ingeniero de sonido"] }
+            ]
+        },
+        danza: {
+            titulo: "Danza",
+            descripcion: "Explora el arte del movimiento corporal y la expresión artística a través de diferentes técnicas y estilos de danza.",
+            contenido: [
+                { subtitulo: "¿Qué aprenderás?", items: ["Ballet clásico", "Danza contemporánea", "Danza folclórica", "Jazz y danza moderna", "Coreografía e improvisación", "Anatomía y biomecánica del movimiento"] },
+                { subtitulo: "Salidas Profesionales", items: ["Bailarín profesional", "Coreógrafo", "Profesor de danza", "Director de compañía de danza", "Bailarín terapéutico", "Performer en producciones artísticas"] }
+            ]
+        },
+        teatro: {
+            titulo: "Teatro",
+            descripcion: "Descubre el arte escénico y desarrolla tus habilidades de actuación, expresión corporal y dramaturgia.",
+            contenido: [
+                { subtitulo: "¿Qué aprenderás?", items: ["Actuación y técnicas interpretativas", "Expresión corporal y vocal", "Historia del teatro", "Dramaturgia y análisis de texto", "Dirección escénica", "Producción y diseño teatral"] },
+                { subtitulo: "Salidas Profesionales", items: ["Actor de teatro, cine o TV", "Director teatral", "Dramaturgo", "Profesor de teatro", "Gestor cultural", "Productor teatral"] }
+            ]
+        }
+    };
 
-    // Inicialización principal cuando el DOM está listo
+    // --- 2. FUNCIONES (SE EJECUTAN CUANDO LA PÁGINA CARGA) ---
     document.addEventListener('DOMContentLoaded', function() {
-        initializeMobileMenus();
-        initializeClickHandlers();
-        initializeCarousel();
-        initializeNavigation();
-    });
 
-    // Función para inicializar submenús móviles
-    function initializeMobileMenus() {
-        const mobileSubmenus = document.querySelectorAll('.mobile-submenu');
-        mobileSubmenus.forEach(submenu => {
-            submenu.style.display = 'none';
-            submenu.classList.add('hidden');
-        });
+        // ✅ Función para el Menú Móvil CORREGIDA
+        function initializeMobileMenu() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const submenuTriggers = document.querySelectorAll('.mobile-submenu-trigger');
 
-        // Event listeners para botones de submenú móvil
-        const mobileSubmenuTriggers = document.querySelectorAll('.mobile-submenu-trigger');
-        mobileSubmenuTriggers.forEach(trigger => {
-            trigger.addEventListener('click', function() {
-                const targetId = this.dataset.target;
-                const submenu = document.getElementById(`submenu-${targetId}`);
-                const arrow = this.querySelector('.mobile-arrow');
-
-                if (submenu && arrow) {
-                    const isHidden = submenu.style.display === 'none' ||
-                        submenu.style.display === '' ||
-                        submenu.classList.contains('hidden');
-
-                    if (isHidden) {
-                        submenu.style.display = 'block';
-                        submenu.classList.remove('hidden');
-                        arrow.style.transform = 'rotate(180deg)';
-                    } else {
-                        submenu.style.display = 'none';
-                        submenu.classList.add('hidden');
-                        arrow.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
-        });
-    }
-
-    // Función para inicializar conductor de clics
-    function initializeClickHandlers() {
-        // Service cards
-        const serviceCards = document.querySelectorAll('.service-card');
-        serviceCards.forEach(card => {
-            card.addEventListener('click', function() {
-                const url = this.dataset.url;
-                if (url && url !== '#') {
-                    window.location.href = url;
-                }
-            });
-        });
-
-        // News cards
-        const newsCards = document.querySelectorAll('.news-card');
-        newsCards.forEach(card => {
-            card.addEventListener('click', function() {
-                const url = this.dataset.url;
-                if (url && url !== '#') {
-                    window.location.href = url;
-                }
-            });
-        });
-
-        // Specialty cards
-        const specialtyCards = document.querySelectorAll('.specialty-card');
-        specialtyCards.forEach(card => {
-            card.addEventListener('click', function() {
-                const url = this.dataset.url;
-                if (url && url !== '#') {
-                    window.location.href = url;
-                }
-            });
-        });
-    }
-
-    // Función para inicializar el carrusel
-    function initializeCarousel() {
-        const carousel = document.getElementById('carousel');
-        if (!carousel) return;
-
-        // Botones de navegación del carrusel
-        const prevButton = document.getElementById('carousel-prev');
-        const nextButton = document.getElementById('carousel-next');
-
-        if (prevButton) {
-            prevButton.addEventListener('click', () => {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            });
-        }
-
-        if (nextButton) {
-            nextButton.addEventListener('click', () => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            });
-        }
-
-        // Indicadores del carrusel
-        const carouselDots = document.querySelectorAll('.carousel-dot');
-        carouselDots.forEach(dot => {
-            dot.addEventListener('click', function() {
-                currentSlide = parseInt(this.dataset.slide);
-                updateCarousel();
-            });
-        });
-
-        // Auto-play del carrusel
-        setInterval(() => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateCarousel();
-        }, 5000);
-
-        // Navegación con teclado
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowLeft') {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            } else if (e.key === 'ArrowRight') {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateCarousel();
-            }
-        });
-    }
-
-    // Función para actualizar el carrusel
-    function updateCarousel() {
-        const carousel = document.getElementById('carousel');
-        if (!carousel) return;
-
-        const translateX = -currentSlide * 100;
-        carousel.style.transform = `translateX(${translateX}%)`;
-
-        // Actualizar indicadores
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.getElementById(`dot-${i}`);
-            if (dot) {
-                if (i === currentSlide) {
-                    dot.classList.remove('bg-gray-400');
-                    dot.classList.add('bg-[#7F1D1D]');
-                } else {
-                    dot.classList.remove('bg-[#7F1D1D]');
-                    dot.classList.add('bg-gray-400');
-                }
-            }
-        }
-    }
-
-    // Función para inicializar la navegación
-    function initializeNavigation() {
-        // Funcionalidad del menú móvil
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        let isMenuOpen = false;
-
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                isMenuOpen = !isMenuOpen;
-
-                if (isMenuOpen) {
-                    mobileMenu.classList.remove('hidden');
-                    mobileMenuButton.classList.add('hamburger-active');
-                    mobileMenuButton.setAttribute('aria-label', 'Cerrar menú');
-                } else {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.classList.remove('hamburger-active');
-                    mobileMenuButton.setAttribute('aria-label', 'Abrir menú');
-                }
-            });
-
-            // Cerrar menú móvil al hacer clic en un enlace
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.classList.remove('hamburger-active');
-                    isMenuOpen = false;
-                    mobileMenuButton.setAttribute('aria-label', 'Abrir menú');
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    menuButton.classList.toggle('hamburger-active');
+                    // Usamos la clase 'show' para activar la animación de CSS
+                    mobileMenu.classList.toggle('show');
                 });
-            });
-        }
+            }
 
-        // Scroll suave para enlaces de navegación
-        const navLinks = document.querySelectorAll('a[href^="#"]');
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
+            // Lógica para los submenús desplegables
+            submenuTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const targetId = trigger.getAttribute('data-target');
+                    const submenu = document.getElementById(`submenu-${targetId}`);
+                    const arrow = trigger.querySelector('.mobile-arrow');
 
-                if (targetSection) {
-                    const header = document.querySelector('header');
-                    const headerHeight = header ? header.offsetHeight : 0;
-                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Observador para destacar enlaces activos
-        const sections = document.querySelectorAll('section[id]');
-        if (sections.length > 0) {
-            const observerOptions = {
-                root: null,
-                rootMargin: '-20% 0px -70% 0px',
-                threshold: 0
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Remover clase activa de todos los enlaces
-                        document.querySelectorAll('.nav-link').forEach(link => {
-                            link.classList.remove('bg-white', 'bg-opacity-20', 'text-yellow-200');
-                        });
-
-                        // Agregar clase activa al enlace correspondiente
-                        const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
-                        if (activeLink && activeLink.classList.contains('nav-link')) {
-                            activeLink.classList.add('bg-white', 'bg-opacity-20', 'text-yellow-200');
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                        if (arrow) {
+                            arrow.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
                         }
                     }
                 });
-            }, observerOptions);
-
-            sections.forEach(section => observer.observe(section));
+            });
         }
 
-        // Efecto de parallax en el header
-        let ticking = false;
+        // Función para el Carrusel de Noticias (No cambia)
+        function initializeCarousel() {
+            const carousel = document.getElementById('carousel');
+            if (!carousel) return;
+            let currentSlide = 0;
+            const slides = carousel.children;
+            const totalSlides = slides.length;
+            const prevButton = document.getElementById('carousel-prev');
+            const nextButton = document.getElementById('carousel-next');
 
-        function updateHeader() {
-            const scrolled = window.scrollY;
-            const header = document.querySelector('header');
-            if (header) {
-                const opacity = Math.max(0.9, 1 - scrolled / 200);
-                header.style.background = `rgba(127, 29, 29, ${opacity})`;
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+                document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+                    dot.classList.toggle('bg-[#7F1D1D]', i === currentSlide);
+                    dot.classList.toggle('bg-gray-400', i !== currentSlide);
+                });
             }
-            ticking = false;
-        }
 
-        function requestTick() {
-            if (!ticking) {
-                requestAnimationFrame(updateHeader);
-                ticking = true;
+            if (prevButton) {
+                prevButton.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateCarousel();
+                });
             }
+
+            if (nextButton) {
+                nextButton.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateCarousel();
+                });
+            }
+
+            document.querySelectorAll('.carousel-dot').forEach(dot => {
+                dot.addEventListener('click', function() {
+                    currentSlide = parseInt(this.dataset.slide);
+                    updateCarousel();
+                });
+            });
+
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
         }
 
-        window.addEventListener('scroll', requestTick);
-    }
+        // Función para el Pop-up de Especialidades (No cambia)
+        function initializeSpecialtyPopup() {
+            const popup = document.getElementById('specialty-popup');
+            const closeButton = popup.querySelector('.close-btn');
+            const popupBody = document.getElementById('specialty-popup-body');
+
+            function openPopup(specialty) {
+                const info = especialidadesInfo[specialty];
+                if (!info) return;
+
+                let html = `<div class="mb-6"><h2 class="text-3xl font-bold text-[#7F1D1D] mb-3">${info.titulo}</h2><p class="text-gray-700 text-lg leading-relaxed">${info.descripcion}</p></div>`;
+                info.contenido.forEach(seccion => {
+                    html += `<div class="mb-6"><h3 class="text-xl font-bold text-gray-800 mb-3">${seccion.subtitulo}</h3><ul class="space-y-2">`;
+                    seccion.items.forEach(item => {
+                        html += `<li class="flex items-start"><span class="text-[#7F1D1D] mr-2">•</span><span class="text-gray-700">${item}</span></li>`;
+                    });
+                    html += `</ul></div>`;
+                });
+                popupBody.innerHTML = html;
+                popup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closePopup() {
+                popup.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('.specialty-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    openPopup(this.dataset.specialty);
+                });
+            });
+
+            closeButton.addEventListener('click', closePopup);
+            popup.addEventListener('click', e => {
+                if (e.target === popup) closePopup();
+            });
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && popup.classList.contains('active')) closePopup();
+            });
+        }
+
+        // --- 3. INICIALIZACIÓN DE TODAS LAS FUNCIONES ---
+        initializeMobileMenu();
+        initializeCarousel();
+        initializeSpecialtyPopup();
+    });
 </script>
 </body>
 </html>
