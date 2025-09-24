@@ -37,7 +37,7 @@
                     <li class="dropdown relative">
                         <a href="#"
                            class="nav-link flex items-center px-6 py-3 text-white font-medium text-lg hover:text-gray-200 transition-all duration-300 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 svg-no-fill " stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                             </svg>
                             Nuestro Liceo
@@ -115,10 +115,11 @@
                 <span class="hamburger-line w-6 h-0.5 bg-white block"></span>
             </button>
         </div>
-        <!-- MENU MÓVIL -->
-        <nav id="mobile-menu" class="md:hidden mobile-menu glass-effect border-t border-red-700 hidden">
+        <!-- MENU MOVIL -->
+        <nav id="mobile-menu" class="md:hidden mobile-menu glass-effect border-t border-red-700">
             <ul class="py-4 space-y-2">
                 <li>
+                    <!-- MENU MOVIL -->
                     <a href="../index.html"
                        class="flex items-center px-6 py-3 text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 mx-4 rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,7 +141,7 @@
                         </svg>
                     </button>
 
-                    <div id="submenu-nuestro-liceo" class="mobile-submenu mx-8 hidden">
+                    <div id="submenu-nuestro-liceo" class="mobile-submenu mx-8">
                         <a href="../blog/historia.html" class="flex items-center px-4 py-2 text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 svg-no-fill" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -195,8 +196,7 @@
         </nav>
     </div>
 </header>
-
-
+<!-- HERO -->
 <section class="bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white pt-32 pb-16">
     <div class="max-w-6xl mx-auto px-6">
         <div class="text-center">
@@ -209,7 +209,7 @@
         </div>
     </div>
 </section>
-
+<!-- CAMPUS -->
 <section class="py-16 px-8 bg-white">
     <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -228,7 +228,7 @@
         </div>
     </div>
 </section>
-
+<!-- NUEVAS INSTALACIONES -->
 <section class="py-16 px-8">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
@@ -372,7 +372,7 @@
         </div>
     </footer>
 </section>
-
+<!-- SCRIPTS -->
 <script>
     // Se ejecuta cuando toda la página ha cargado
     document.addEventListener('DOMContentLoaded', function() {
@@ -382,16 +382,13 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const submenuTriggers = document.querySelectorAll('.mobile-submenu-trigger');
 
-            // Lógica para el botón principal del menú (hamburguesa)
             if (menuButton && mobileMenu) {
                 menuButton.addEventListener('click', () => {
                     menuButton.classList.toggle('hamburger-active');
-                    // Alternamos la clase 'show' para la animación de altura
                     mobileMenu.classList.toggle('show');
                 });
             }
 
-            // Lógica para los botones que despliegan submenús
             submenuTriggers.forEach(trigger => {
                 trigger.addEventListener('click', () => {
                     const targetId = trigger.getAttribute('data-target');
@@ -399,7 +396,6 @@
                     const arrow = trigger.querySelector('.mobile-arrow');
 
                     if (submenu) {
-                        // También usamos la clase 'show' para animar los submenús
                         submenu.classList.toggle('show');
                         if (arrow) {
                             arrow.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
@@ -409,9 +405,19 @@
             });
         }
 
+        function initializeContactForm() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                // ✅ SE ELIMINÓ EL PARÁMETRO 'e' QUE NO SE USABA
+                contactForm.addEventListener('submit', function() {
+                    console.log("Formulario enviado a través de mailto:");
+                });
+            }
+        }
+
         // --- Llamada a todas las funciones de inicialización ---
         initializeMobileMenu();
-        // (Aquí podrías añadir otras funciones si esta página las necesitara)
+        initializeContactForm();
 
     });
 </script>

@@ -209,7 +209,7 @@
         </div>
     </div>
 </section>
-
+<!-- FORMULARIO -->
 <section class="py-16 ">
     <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12">
@@ -305,7 +305,7 @@
                     <!-- Google Maps Embed -->
                     <div class="aspect-video rounded-lg overflow-hidden mb-4">
                         <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509.57259114492217!2d-73.7741798078417!3d-42.4810416489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x962219f3898dd505%3A0xe6028d1abbd04b26!2sESCUELA%20DE%20LA%20CULTURA%20(MOMENTANEA)!5e1!3m2!1ses!2scl!4v1758575439772!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509.57259114492217!2d-73.7741798078417!3d-42.4810416489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x962219f3898dd505%3A0xe6028d1abbd04b26!2sESCUELA%20DE%20LA%20CULTURA%20(MOMENTANEA)!5e1!3m2!1ses!2scl!4v1758575439772!5m2!1ses!2scl"
                                 width="100%"
                                 height="100%"
                                 style="border:0;"
@@ -354,7 +354,6 @@
     </div>
     <div class="h-40 relative z-10"></div>
 </div>
-
 <!-- FOOTER -->
 <section>
     <footer class="w-full px-8 bg-red-900 text-white py-12">
@@ -441,10 +440,54 @@
         </div>
     </footer>
 </section>
-
 <!-- SCRIPTS -->
+<script>
 
+    document.addEventListener('DOMContentLoaded', function() {
 
+        function initializeMobileMenu() {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const submenuTriggers = document.querySelectorAll('.mobile-submenu-trigger');
 
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    menuButton.classList.toggle('hamburger-active');
+                    mobileMenu.classList.toggle('show');
+                });
+            }
+
+            submenuTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const targetId = trigger.getAttribute('data-target');
+                    const submenu = document.getElementById(`submenu-${targetId}`);
+                    const arrow = trigger.querySelector('.mobile-arrow');
+
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                        if (arrow) {
+                            arrow.style.transform = submenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+                        }
+                    }
+                });
+            });
+        }
+
+        function initializeContactForm() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+
+                contactForm.addEventListener('submit', function(e) {
+                    console.log("Formulario enviado a través de mailto:");
+                });
+            }
+        }
+
+        // --- Llamada a todas las funciones de inicialización ---
+        initializeMobileMenu();
+        initializeContactForm();
+
+    });
+</script>
 </body>
 </html>
